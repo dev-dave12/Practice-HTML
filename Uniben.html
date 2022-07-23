@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>UNIBEN WEBSITE</title>
+    </head>
+<style>
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0%;
+        overflow: hidden;
+        background-color: rgb(65, 50, 50);
+    }
+
+    li {
+        float: left;
+        
+    }
+    li a:hover {
+        background-color: green;
+    }
+    li a {
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 26px;
+        text-decoration: none;
+    }
+    .div1 {
+        background-color: black;
+        color: white;
+        padding: 20px;
+    }
+
+</style>
+<body>
+    <img src="https://nigerianfinder.com/wp-content/uploads/2018/02/Uniben-Logo.png" alt="UNIBEN LOGO" width="200px" height="200px"><hr>
+    <h1>UNIVERSITY OF BENIN</h1>
+    <p>Please use the navigation bar below to select the right page you are looking for</p>
+    <ul>
+        <li><a href="index.html">Home </a></li>
+        <li><a href="#news">News</a></li>
+        <li><a href="#Contact">Contact</a></li>
+        <li><a href="#Programme">Programme</a></li>
+        <li> <a href="#About">About</a></li>
+    </ul>
+    <div class="div1">
+        <h2 id="try">WELCOME TO THE OFFICIAL WEBSITE OF THE UNIVERSITY OF BENIN</h2>
+        <p id="demo">
+            The University of Benin is an institution that offers you quality lectures and services. 
+            We are one of the best instituions in Nigeria, with a lot of successful Alumni, the likes of <span style="color: blue;font-weight:bold">Basketmouth, RMD, Hon. Babatunde Raji Fashola</span>  and lots more. 
+            These individuals has been an inspiration to others as we have upcoming successful individuals presently.
+        </p>
+    </div>
+    <button onclick="displayResult()">Change Header</button>
+    <script>
+        function displayResult() {
+            document.getElementById("try").innerHTML = "WELCOME TO UNIBEN";
+            document.getElementById("")
+            document.getElementById("demo").style.fontSize = "25px"
+            document.getElementById("demo").style.color = "black"
+            document.getElementById("demo").style.backgroundColor = "white"
+        }
+    </script>
+</body>
+
+</html>

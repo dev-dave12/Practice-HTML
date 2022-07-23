@@ -6,7 +6,7 @@
     </head>
 <style>
     body {
-        background-image: url(https://png.pngtree.com/thumb_back/fh260/background/20200714/pngtree-modern-double-color-futuristic-neon-background-image_351866.jpg);
+        background-image: url(https://static.vecteezy.com/system/resources/previews/001/409/192/original/abstract-geometric-banner-free-vector.jpg);
         background-size: cover;
         background-attachment: fixed;
         background-repeat: no-repeat;
@@ -45,49 +45,90 @@ address {color: white;
     padding: 10px 15px;
     text-align: center;
     display: inline-block;
+    text-decoration: none;
 }
-.here {
+.here :hover {
+    background-color: blue;
     color: white;
 }
-table, th, td {
-    border: 3px solid white;
+th, td {
+    border: 1px solid black;
     color: white;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border-collapse: collapse;
+    background-color: blue;
+    border-radius: 10px;
+    text-align: center;
+}
+tr :hover {
+    background-color: black;
+}
+caption {
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;    
+    text-decoration: underline;
 }
 </style>
 <body>
     <img src="https://bitcoin.org/img/icons/opengraph.png?1656252469" alt="david logo" width="70" height="70" usemap="workmap"><hr>
     <p>Bitcoin was founded in 19... and it has been a good and stable cryptocurency</p>
-    <a href="https://w3schools.com">
+    <a href="Uniben.html">
     <img src="https://i.gifer.com/3otv.gif" alt="programmer gif" style="float: right;" width="250px" height="200px">
     </a>
     <h1>DAVID WEBSITE</h1>
     <h2>Welcome to my Website</h2>
     <picture>
-        <source media="(min-width:650px)" srcset="david logo.jpg">
-        <source media="(min-width:350px)" srcset="https://thumbs.dreamstime.com/b/spring-background-pink-flowers-heart-petals-greeting-card-woman-day-flat-lay-top-view-style-109972453.jpg">
-        <img src="david logo.jpg" alt="i cannnot show">
+        <img src="https://nigerianfinder.com/wp-content/uploads/2018/02/Uniben-Logo.png" alt="Uniben-Logo" width="350px" height="350px">
     </picture>
+    <p style="color: black;">The University of Benin is known for its excellent teaching and is ranked one of the best universities in Nigeria</p>
+<p id="demo"></p>
+<script>
+    document.getElementById("demo").innerHTML = "Hello JavaScript"
+</script>
     <h3><a href="#B1">Go to Address</a></h3>
     <p>My name is David Anazia and I am a newbie to HTML. I am just trying out stuff on HTML. I learn at a School called W3schools
         (For more enquiries about the school, please click <a href="https://w3schools.com"> here)</a>
     </p>
-<button onclick="document.location='default.asp'" class="bttn">Click here</button>
+<a href="https://w3schools.com" class="bttn"> Click here </a>
     <p>Send an email <a href="davidanazia@gmail.com" class="here">here</a></p>
     <a href="https://w3schools.com" title="Go to W3SCHOOLS" class="visit">Visit Our HTML Tutorials</a>
-<table style="width: 100%;">
+
+<h3>This is an example of an Unordered List</h3>
+<ul style="list-style-type: square;">
+    <li>Coffee</li>
+    <li>Tea</li>
+    <li>Milk</li>
+</ul>
+<h4>This is an Ordered List</h4>
+<ol>
+    <li>Coffee</li>
+    <li>Tea</li>
+    <li>Milk</li>
+</ol>
+    <table style="width: 100%;">
+     
+    <caption>DATABASE</caption>
+   <colgroup>
+        <col span="2" style="background-color: aqua;">
+    </colgroup>
     <tr>
-        <td>Names</td>
-        <td>Class</td>
-        <td>Department</td>
-    </tr>
+        <th>Names</th>
+        <th>Level</th>
+        <th>Department</th>
     <tr>
         <td>David Anazia</td>
         <td>300 Level</td>
         <td>Economics and Statistics</td>
     </tr>
+    <tr>
+        <td>Triumph Anazia</td>
+        <td>400 Level</td>
+        <td>Electrical and Electronics Engineering</td>
+    </tr>
 </table>
-
+<iframe src="demo_iframe.htm" name="iframe_a" style="border: 2px solid red;" width="2000px" height="500px" title="University of Benin"></iframe>
+<p><a href="Uniben.html" target="iframe_a">Uniben.html</a></p>
     <address id="B1">
         Coded by <br>
         David Anazia <br>
