@@ -1,9 +1,11 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <meta charset="utf-8">
+        <meta name="Uniben" content="width=device-width, initial-scale=1.0">
         <title>UNIBEN WEBSITE</title>
         <link rel="icon" href="/Images/Uniben-Logo.ico" type="icon">
-        <meta name="Uniben" content="width=device-width, initial-scale=1.0">
+        
     <style>
     ul {
         list-style-type: none;
@@ -19,6 +21,7 @@
     }
     li a:hover {
         background-color: green;
+        
     }
     li a {
         display: block;
@@ -31,6 +34,49 @@
         background-color: black;
         color: white;
         padding: 20px;
+    }
+    header {
+        padding: 5px;
+        background-color: purple;
+        text-align: center;
+        color: white;
+        font-size: 30px;
+    }
+    img {
+        float: left;
+
+    }
+    nav {
+        float: right;
+        padding: 10px;
+        width: 20%;
+        height: 800px;
+        background-color:white;
+    }
+    nav ul {
+        list-style-type: none;
+        padding: 0;
+
+    }
+    body {
+        background-color: rgb(227, 216, 236);
+    }
+    
+    .article1 {
+        margin: 0;
+        padding: 5px;
+        background-color: lightgray;
+    }
+    .article2 {
+        background-color: white;
+    }
+    .article1 > h1, .article2 {
+        margin: 10px;
+        padding: 5px;
+    }
+    .article2 > h2, p {
+        margin: 4px;
+        font-size: 90%;
     }
 
 </style>
@@ -46,9 +92,11 @@
     </head>
 
 <body>
-    <img src="https://nigerianfinder.com/wp-content/uploads/2018/02/Uniben-Logo.png" alt="UNIBEN LOGO" width="200px" height="200px"><hr>
-    <h1>UNIVERSITY OF BENIN</h1>
-    <p>Please use the navigation bar below to select the right page you are looking for</p>
+    <img src="https://nigerianfinder.com/wp-content/uploads/2018/02/Uniben-Logo.png" title="UNIVERSITY OF BENIN" alt="UNIBEN LOGO" width="150px" height="150px">
+    <header>
+        <h1>UNIVERSITY OF BENIN</h1>
+    </header>
+      
     <ul>
         <li><a href="index.html">Home </a></li>
         <li><a href="#news">News</a></li>
@@ -64,7 +112,22 @@
             These individuals has been an inspiration to others as we have upcoming successful individuals presently.
         </p>
     </div>
-    <button onclick="displayResult()">Change Header</button>
+    <nav>
+        <img src="https://uniben.edu.ng/wp-content/uploads/2021/02/PROF-SALAMI.jpg" alt="UNIBEN VC" width="100%" height="40%">
+        <p style="text-align: center;"> <span style="text-decoration: underline;">VICE CHANCELLOR<br></span> <span style="font-size: 30px;">UNIVERSITY OF BENIN</span> </p>
+    </nav>
+    <article>
+        <h1 class="article1">UNIBEN</h1>
+        <article class="article2">
+            <h2>PROGRAMMES</h2>
+                <P>We offer various programmes like sandwich, part-time, full time programme and lots more</P>
+        </article>
+        <article class="article2">
+            <h2>DEPARTMENTS</h2>
+            <p>We have various departments like Economics and Statistics, Engineering, Nursing, Microbioology, Social works and many others.</p>
+        </article>
+    </article>
+    
    
 </body>
 
