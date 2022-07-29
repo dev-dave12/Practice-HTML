@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en-us">
     <head>
         <meta charset="utf-8">
         <meta name="Uniben" content="width=device-width, initial-scale=1.0">
@@ -62,21 +62,30 @@
         background-color: rgb(227, 216, 236);
     }
     
-    .article1 {
-        margin: 0;
-        padding: 5px;
-        background-color: lightgray;
-    }
+    
     .article2 {
         background-color: white;
+        width: 300px;
     }
-    .article1 > h1, .article2 {
-        margin: 10px;
-        padding: 5px;
-    }
+    
     .article2 > h2, p {
-        margin: 4px;
+        margin: 10px;
         font-size: 90%;
+    }
+    aside {
+        width: 20%;
+        padding-right: 10px;
+        margin-right: 15px;
+        float: left;
+        font-style: italic;
+        background-color: lightgray;
+        height: 330px;
+    }
+    .asideul {
+        background-color: lightgray;
+        list-style-type: disc;
+        float: none;
+
     }
 
 </style>
@@ -117,7 +126,7 @@
         <p style="text-align: center;"> <span style="text-decoration: underline;">VICE CHANCELLOR<br></span> <span style="font-size: 30px;">UNIVERSITY OF BENIN</span> </p>
     </nav>
     <article>
-        <h1 class="article1">UNIBEN</h1>
+        
         <article class="article2">
             <h2>PROGRAMMES</h2>
                 <P>We offer various programmes like sandwich, part-time, full time programme and lots more</P>
@@ -127,6 +136,20 @@
             <p>We have various departments like Economics and Statistics, Engineering, Nursing, Microbioology, Social works and many others.</p>
         </article>
     </article>
+    <aside>
+        <h4>FACAULTY</h4>
+        <p>There are various amazing faculties in the University of Benin. Some of these facaulties have so long been, since the inception of the University of Benin</p>
+        
+    </aside>
+    <form action="">
+        <label for="fname">First name</label>
+        <input type="text" name="fname" id="fname">
+        <label for="lname">Last name</label>
+        <input type="text" name="lname" id="lname">
+    </form>
+    <footer>
+        <p>The University of Benin</p>
+    </footer>
     
    
 </body>
