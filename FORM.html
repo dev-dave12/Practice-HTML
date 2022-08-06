@@ -6,30 +6,69 @@
     <body>
         <h1>FORM</h1>
         <h3>Please fill up the follwowing details correctly</h3>
-        <form action="/action_page.php">
+        <form action="/action_page.php" style="background-color: rgb(154, 154, 218);">
+            <fieldset>
+            <legend>Personal Information</legend>
             <label for="fname">First name</label>
-            <input type="text" name="fname" id="fname">
+            <input type="text" name="fname" id="fname" width="100%">
             <label for="lname">Last name</label>
-            <input type="text" name="lname" id="lname"><br><br>
-            <input type="submit" value="submit">
-        </form>
-        <p>Choose Title</p>
-        <form action="">
+            <input type="text" name="lname" id="lname">
+            <label for="oname">Other names</label>
+            <input type="text" name="oname" id="oname"><br><br>
+
+            <p>Choose Title</p>
             <input type="radio" id="Mr" name="title" value="Mr">
             <label for="Mr">Mr</label><br>
             <input type="radio" id="Mrs" name="title" value="Mrs">
             <label for="Mrs">Mrs</label><br>
             <input type="radio" name="title" id="Miss" value="Miss">
             <label for="Miss">Miss</label>
-        </form>
-        <p>HOW DID YOU HEAR ABOUT UNIBEN</p>
-        <form action="">
+
+            <p>HOW DID YOU HEAR ABOUT UNIBEN</p>
             <input type="checkbox" name="fb" id="Facebook" value="Facebook">
             <label for="Facebook">Facebook</label>
             <input type="checkbox" name="IG" id="Instagram" value="Instagram">
             <label for="Facebook">Instagram</label>
             <input type="checkbox" name="Tw" id="Twitter" value="Twitter">
             <label for="Twitter">Twitter</label>
+            </fieldset>
+            <fieldset>
+                <legend>Next of Kin</legend>
+                <label for="fname">First Name</label>
+                <input type="text" name="fname" id="fname" style="width: 30%;">
+                <label for="lname">Last Name</label>
+                <input type="text" name="lname" id="lname" style="width: 30%;">
+
+            </fieldset>
+            
         </form>
+        
+        </form>
+        
+        </form>
+        <form action="">
+            <h4>WHAT TYPES OF INSTRUMENTS ARE YOU INTERESTED IN</h4>
+            <label for="Instruments">Please choose an instrument</label>
+            <select name="Instruments" id="Instruments" size="4">
+                <option value="Drums">Drums</option>
+                <option value="Piano">Piano</option>
+                <option value="Saxophone">Saxophone</option>
+                <option value="Violin">Violin</option>
+                <option value="" selected></option>
+                <input type="submit" name="" id="">
+            </select>
+        </form>
+        <form action="">
+            <h4>What are the reasons why you considered comning to UNIBEN</h4>
+            <textarea name="reasons" id="reasons" cols="30" rows="10"></textarea><br>
+            <input type="submit" name="" id="">
+        </form>
+        <form>
+            <input type="checkbox" id="ask" onclick="alert('Are you sure?')"> 
+            <label for="ask">I have read, understood and agreed to abide by all the rules and 
+                regulations stated in the University of Benin</label><br><br>
+            <input type="Submit" name="Submit" id="Submit">        
+        </form>
+        <button type="button" onclick="alert('Are you sure you want to submit?')">Done</button>
     </body>
 </html>
