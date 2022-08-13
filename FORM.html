@@ -3,18 +3,26 @@
     <head>
         <title>FORM</title>
     </head>
+
     <body>
         <h1>FORM</h1>
         <h3>Please fill up the follwowing details correctly</h3>
+       
         <form action="/action_page.php" style="background-color: rgb(154, 154, 218);">
             <fieldset>
-            <legend>Personal Information</legend>
+            <legend><strong>Personal Information</strong></legend>
             <label for="fname">First name</label>
             <input type="text" name="fname" id="fname" width="100%">
             <label for="lname">Last name</label>
             <input type="text" name="lname" id="lname">
             <label for="oname">Other names</label>
-            <input type="text" name="oname" id="oname"><br><br>
+            <input type="text" name="oname" id="oname">
+            <label for="dob">Date of Birth</label>
+            <input type="date" name="datemin" id="datemin" min="1960-01-01"><br><br>
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email"><br><br>
+            <label for="myfile">Select a file</label>
+            <input type="file" name="myfile" id="myfile">
 
             <p>Choose Title</p>
             <input type="radio" id="Mr" name="title" value="Mr">
@@ -40,9 +48,7 @@
                 <input type="text" name="lname" id="lname" style="width: 30%;">
 
             </fieldset>
-            
-        </form>
-        
+            </form>
         </form>
         
         </form>
@@ -59,6 +65,11 @@
             </select>
         </form>
         <form action="">
+            <label for="favcolor">Select your favourite color</label>
+            <input type="color" name="favcolor" id="favcolor"><br>
+            <input type="submit" name="" id="">
+        </form>
+        <form action="">
             <h4>What are the reasons why you considered comning to UNIBEN</h4>
             <textarea name="reasons" id="reasons" cols="30" rows="10"></textarea><br>
             <input type="submit" name="" id="">
@@ -68,6 +79,25 @@
             <label for="ask">I have read, understood and agreed to abide by all the rules and 
                 regulations stated in the University of Benin</label><br><br>
             <input type="Submit" name="Submit" id="Submit">        
+        </form>
+        <h4>WHAT CHURCH DO YOU ATTEND?</h4>
+        <input list="church" name="church">
+        <datalist id="church">
+            <option value="RCCG">RCCG</option>
+            <option value="Winners">Winners</option>
+            <option value="JPICC">JPICC</option>
+            <option value="Heavenly Mandate"></option>
+        </datalist>
+        <form action="/action_page.php"
+        oninput="x.value=parseInt(a.value)+parseInt(b.value)">
+        0
+        <input type="range" id="a" name="a" value="50">
+        100 +
+        <input type="number" id="b" name="b" value="50">
+        =
+        <output name="x" for="a b"></output>
+        <br><br>
+        <input type="submit">
         </form>
         <button type="button" onclick="alert('Are you sure you want to submit?')">Done</button>
     </body>
