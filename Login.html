@@ -5,13 +5,23 @@
     </head>
     <style>
         body {
-            background-color: rgb(128, 43, 128);
+            background-image: url(https://cdn.wallpapersafari.com/46/26/5Fl4t1.jpg);
+            background-size: cover;
+            background-attachment: fixed;
+        }
+        h1 {
+            background-color: rgb(39, 36, 36);
         }
         .Login {
-            border: 10px;
-            background-color: rgb(214, 186, 28);
-            padding: 10px;
+            border: 2px;
+            background-color: rgba(250, 245, 245, 0.479);
+            padding: 20px;
             text-align: center;
+            border-width: 5px;
+            border-radius: 40px;
+            width: auto;    
+            border-collapse: collapse;
+            
         }
         
     </style>
@@ -21,9 +31,9 @@
         <h1 style="text-align: center; color: white;">LOGIN</h1>
         <form action="FORM.html" class="Login">
             <label for="email">Email or Username</label><br>
-            <input type="text" name="username" id="username"><br>
+            <input type="text" name="username" id="username" size="30" required><br>
             <label for="pwd">Password</label><br>
-            <input type="password" name="pwd" id="pwd"><br><br>
+            <input type="password" name="pwd" id="pwd" size="30" required><br><br>
             <input type="submit" value="Login">
             <input type="submit" value="Sign up"><br><br>
             <input type="submit" value="Can't find account?">

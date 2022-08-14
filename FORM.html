@@ -2,27 +2,35 @@
 <html>
     <head>
         <title>FORM</title>
+        <link rel="stylesheet" href="https://cdn.dribbble.com/users/2520930/screenshots/5568228/artboard_1_copy_3_4x-8_4x.png">
     </head>
+    <style>
+        body {
+            background-image: url(https://cdn.dribbble.com/users/2520930/screenshots/5568228/artboard_1_copy_3_4x-8_4x.png);  
+            background-size: cover;
+            background-attachment: fixed;          
+        }
+    </style>
 
     <body>
-        <h1>FORM</h1>
+        <h1 style="background-color: yellow;">FORM</h1>
         <h3>Please fill up the follwowing details correctly</h3>
        
         <form action="/action_page.php" style="background-color: rgb(154, 154, 218);">
             <fieldset>
             <legend><strong>Personal Information</strong></legend>
-            <label for="fname">First name</label>
-            <input type="text" name="fname" id="fname" width="100%">
+            <label for="fname">First name</label><br>
+            <input type="text" name="fname" id="fname" size="160"><br><br>
             <label for="lname">Last name</label>
-            <input type="text" name="lname" id="lname">
+            <input type="text" name="lname" id="lname" size="160"><br><br>
             <label for="oname">Other names</label>
-            <input type="text" name="oname" id="oname">
+            <input type="text" name="oname" id="oname" size="160"><br><br>
             <label for="dob">Date of Birth</label>
             <input type="date" name="datemin" id="datemin" min="1960-01-01"><br><br>
             <label for="email">Email</label>
             <input type="email" name="email" id="email"><br><br>
             <label for="myfile">Select a file</label>
-            <input type="file" name="myfile" id="myfile">
+            <input type="file" name="myfile" id="myfile" multiple>
 
             <p>Choose Title</p>
             <input type="radio" id="Mr" name="title" value="Mr">
