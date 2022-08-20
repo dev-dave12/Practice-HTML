@@ -4,7 +4,8 @@
         <meta charset="utf-8">
         <meta name="Uniben" content="width=device-width, initial-scale=1.0">
         <title>UNIBEN WEBSITE</title>
-        <link rel="icon" href="/Images/Uniben-Logo.ico" type="icon">
+        <link rel="icon" href="/Images/Uniben-Logo.jpg" type="icon">
+        <link rel="shortcut icon" href="./Images/Uniben-Logos.jpg" type="image/x-icon">
         
     <style>
     ul {
@@ -51,14 +52,16 @@
         padding: 10px;
         width: 20%;
         height: 800px;
+        right: 0px;
+        top: 0px;
         background-color:white;
+        position: sticky;
     }
-    nav ul {
+    nav > ul {
         list-style-type: none;
-        padding: 0;
-
+        padding: 0%;
     }
-    body {
+    body  {
         background-color: rgb(227, 216, 236);
     }
     
@@ -66,6 +69,7 @@
     .article2 {
         background-color: white;
         width: 300px;
+        
     }
     
     .article2 > h2, p {
@@ -121,7 +125,7 @@
             These individuals has been an inspiration to others as we have upcoming successful individuals presently.
         </p>
     </div>
-    <nav>
+    <nav style="position: sticky;">
         <img src="https://uniben.edu.ng/wp-content/uploads/2021/02/PROF-SALAMI.jpg" alt="UNIBEN VC" width="100%" height="40%">
         <p style="text-align: center;"> <span style="text-decoration: underline;">VICE CHANCELLOR<br></span> <span style="font-size: 30px;">UNIVERSITY OF BENIN</span> </p>
     </nav>
@@ -147,7 +151,10 @@
         <label for="lname">Last name</label>
         <input type="text" name="lname" id="lname">
     </form>
-    <footer>
+    <footer style="border: 3px solid black;
+    position: fixed;
+    bottom: 0px; left: 0px;
+    ">
         <p>The University of Benin</p>
     </footer>
     
