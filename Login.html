@@ -8,35 +8,69 @@
             background-image: url(https://cdn.wallpapersafari.com/46/26/5Fl4t1.jpg);
             background-size: cover;
             background-attachment: fixed;
+            justify-content: center;
+            align-items: center;
+            display: flex;
+            height: 100vh;
+            background: linear-gradient(135deg, #71b7e6, #9b59b6);
         }
-        h1 {
-            background-color: rgb(39, 36, 36);
-        }
+        /* I'm still coming back to this */
         .Login {
             border: 2px;
             background-color: rgba(250, 245, 245, 0.479);
-            padding: 20px;
+            padding: 20px; /* I'm still coming back to this */
             text-align: center;
-            border-width: 5px;
             border-radius: 40px;
             width: auto;    
-            border-collapse: collapse;
-            
+            margin: 25px;
         }
-        
+        .container {
+            max-width: 700px;
+            width: 100%;
+            background: rgba(255, 255, 255, 0.671);
+            padding: 25px 30px;
+            border-radius: 40px;
+            border-style: groove;
+            border-color: black;
+        }
+        form {
+            display: inline-block;
+            block-size: auto;
+            justify-content: space-between;
+        }
     </style>
 
     <body>
         
-        <h1 style="text-align: center; color: white;">LOGIN</h1>
-        <form action="FORM.html" class="Login">
-            <label for="email">Email or Username</label><br>
-            <input type="text" name="username" id="username" size="30" required><br>
-            <label for="pwd">Password</label><br>
-            <input type="password" name="pwd" id="pwd" size="30" required><br><br>
-            <input type="submit" value="Login">
+        
+        <div class="container"> 
+            <h1>REGISTRATION</h1> <!--These is how to write -->
+        <form action="FORM.html" class="form" method="post"> 
+            <label for="full name">Full Name</label>
+            <input type="text" name="full name" id="full name" placeholder="Full name" required><br>
+            <label for="username">Username</label>
+            <input type="text" name="username" id="username" placeholder="username" required><br>
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" placeholder="email" required><br>
+            <label for="phone number">Phone number</label>
+            <input type="text" name="phone number" id="phone number" placeholder="Phone Number" required><br>
+            <label for="pwd">Password</label>
+            <input type="password" name="pwd" id="pwd" placeholder="Password" required><br>
+            <label for="pwd">Confirm Password</label>
+            <input type="password" name="Confirm password" id="Confirm password" placeholder="Confirm Password" required><br>
+            <label for="Choose Gender">Choose Gender</label>
+            <label for="male">Male</label>
+            <input type="radio" name="gender" id="male">
+            <label for="female">female</label>
+            <input type="radio" name="gender" id="female">
+            <label for="prefer not to say">Prefer not to say</label>
+            <input type="radio" name="gender" id="prefer not to say"><br><br>
+            <input type="submit" value="Register">
             <input type="submit" value="Sign up"><br><br>
             <input type="submit" value="Can't find account?">
+        </div>
+        
 
         </form>
     </body>
+    </html>
