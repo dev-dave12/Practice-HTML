@@ -196,6 +196,7 @@ nav .fa{
 
 .campus-col img{
     width: 100%;
+    display: block;
 }
 
 .layer{
@@ -208,6 +209,119 @@ nav .fa{
     transition: .5s;
 }
 
-.layer:hover{
+.layer:hover {
     background: rgba(226, 0, 0, 0.7);
+}
+
+.layer h3{
+    width: 100%;
+    font-weight: 500;
+    color: white;
+    font-size: 26px;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    opacity: 0;
+    transition: .5s ease-in-out;
+}
+.layer:hover h3{
+    bottom: 49%;
+    opacity: 1;
+}
+
+/* facilities */
+
+.facilities{
+    margin: auto;
+    text-align: center;
+    padding: 100px;
+}
+
+.facilities-col{
+     flex-basis: 31%;
+     border-radius: 10px;
+     margin-bottom: 5%;
+     text-align: left;
+     display: block;
+}
+
+.facilities-col img{
+    width: 100%;
+    border-radius: 10px;
+}
+
+.facilities-col p{
+    padding: 0;
+}
+
+.facilities-col h3{
+    margin-top: 16px;
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+/* Testimonials */
+.testimonials{
+    padding-top: 100px;
+    text-align: center;
+}
+
+.testimonials-col{
+    flex-basis: 41%;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    background: rgb(248, 209, 209);
+    padding: 25px;
+    cursor: pointer;
+    text-align: left;
+    display: flex;
+}
+
+.testimonials-col img{
+   height: 40px;
+   margin-left: 5px;
+   margin-right: 30px;
+   border-radius: 50%;
+}
+
+.testimonials-col p{
+   padding: 0;
+}
+
+.testimonials-col h3{
+   margin-top: 16px;
+   margin-bottom: 15px;
+   text-align: left;
+}
+
+/* Call to Action */
+.cta{
+    margin: 100px auto;
+    width: 80%;
+    background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(https://www.responsiveclassroom.org/wp-content/uploads/2016/04/DSC_2388-1024x682.jpg);   
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px;
+    text-align: center;
+    padding: 100px 0;
+}
+
+.cta h1{
+    color: white;
+    margin-bottom: 40px;
+    padding: 0;
+}
+
+/* Footer */
+.footer{
+    width: 100%;
+    text-align: center;
+    padding: 30px 0;
+}
+
+.footer h4{
+    margin-bottom: 25px;
+    margin-top: 20px;
+    font-weight: 600;
 }

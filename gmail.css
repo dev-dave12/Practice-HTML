@@ -1,0 +1,49 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+}
+
+.content{
+    text-align: center;
+    border: 2px solid rgba(0, 0, 0, 0.205);
+    border-radius: 5px;
+    width: 400px;
+    height: 400px;
+    justify-items: center;
+    margin-top: 130px;
+    margin-left: 450px;
+    padding: 10px;
+    padding-top: 15px;
+}
+
+.content h2{
+    font-weight: 300;
+}
+
+.content h3{
+    font-weight: 200;
+}
+
+.box{
+    width: 330px;
+    background: transparent;
+    height: 50px;
+    border-color: rgb(199, 192, 192);
+    border: solid rgb(199, 192, 192);
+    border-radius: 3px;
+    border-width: 1px;
+    
+}
+
+.forget{
+    color: blue;
+    font-weight: 500;
+    justify-content: left;
+    
+}
+
+.not-ur-pc{
+    margin-top: -190px;
+    margin-left: 470px;
+}
